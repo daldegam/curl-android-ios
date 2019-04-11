@@ -60,8 +60,10 @@ $NDK_ROOT/build/tools/make-standalone-toolchain.sh --arch=arm --platform=$TARGET
 # Setup cross-compile environment
 export SYSROOT=$TOOLCHAIN/sysroot
 export ARCH=armv7
-export CC=$TOOLCHAIN/bin/arm-linux-androideabi-gcc
-export CXX=$TOOLCHAIN/bin/arm-linux-androideabi-g++
+#export CC=$TOOLCHAIN/bin/arm-linux-androideabi-gcc
+#export CXX=$TOOLCHAIN/bin/arm-linux-androideabi-g++
+export CC=$TOOLCHAIN/bin/arm-linux-androideabi-clang
+export CXX=$TOOLCHAIN/bin/arm-linux-androideabi-clang++
 export AR=$TOOLCHAIN/bin/arm-linux-androideabi-ar
 export AS=$TOOLCHAIN/bin/arm-linux-androideabi-as
 export LD=$TOOLCHAIN/bin/arm-linux-androideabi-ld
